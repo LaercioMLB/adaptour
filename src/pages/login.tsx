@@ -13,32 +13,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { Input } from "@/components/Form/input";
 import { Logo } from "@/components/Header/Logo";
 
-type SignInFormData = {
-  email: string;
-  password: string;
-};
-
-const signInFormSchema = yup.object().shape({
-  email: yup
-    .string()
-    .required("E-mail obrigatório")
-    .email("Digite um e-mail válido"),
-  password: yup.string().required("Senha obrigatória"),
-});
-
 export default function SignIn() {
-  const { register, handleSubmit, formState } = useForm({
-    resolver: yupResolver(signInFormSchema),
-  });
-
-  const { errors } = formState;
-
-  const handleSignIn: SubmitHandler<SignInFormData> = async (values) => {
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-
-    console.log(values);
-  };
-
   return (
     <Flex w="100wh" h="100vh" align="center" justify="center" color="gray.50">
       <Flex
@@ -49,7 +24,6 @@ export default function SignIn() {
         p="8"
         borderRadius={8}
         flexDir="column"
-        // onSubmit={handleSubmit(handleSignIn)}
       >
         <Stack spacing="4">
           <Logo />
@@ -67,13 +41,7 @@ export default function SignIn() {
             Esqueceu sua senha?
           </Link>
         </Stack>
-        <Button
-          type="submit"
-          mt="6"
-          colorScheme="orange"
-          size="lg"
-          isLoading={formState.isSubmitting}
-        >
+        <Button mt="6" colorScheme="orange" size="lg">
           Entrar
         </Button>
         <Flex alignItems="center" gap={1} my={4}>
@@ -82,7 +50,7 @@ export default function SignIn() {
           <Divider />
         </Flex>
         <Link
-          href="#"
+          href="/register"
           _hover={{
             color: "orange",
             transition: "0.2s",

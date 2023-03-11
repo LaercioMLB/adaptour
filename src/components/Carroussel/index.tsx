@@ -1,4 +1,4 @@
-import { Box, Image, Heading } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -63,6 +63,7 @@ export default function CarouselComponent() {
               backgroundPosition="center"
               backgroundRepeat="no-repeat"
               objectFit="cover"
+              backgroundSize="100%"
             >
               <Heading as="h1" brightness={"50%"} color="orange.700" size="3xl">
                 {item.title}

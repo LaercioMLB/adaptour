@@ -7,11 +7,11 @@ export function MenuList() {
       url: "#",
     },
     {
-      name: "Contato",
+      name: "Como funciona",
       url: "#",
     },
     {
-      name: "Suporte",
+      name: "Dúvidas",
       url: "#",
     },
   ];

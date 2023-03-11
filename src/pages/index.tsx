@@ -1,14 +1,15 @@
 import CarouselComponent from "@/components/Carroussel";
+import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
-import { Input } from "@/components/Form/input";
 import { Header } from "@/components/Header";
-import { Box, Button, Center, Flex, Text } from "@chakra-ui/react";
+import Section from "@/components/Section";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <CarouselComponent />
+      <Section />
+      <Faq />
       <Footer />
     </>
   );

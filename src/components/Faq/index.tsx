@@ -73,7 +73,7 @@ export default function Faq() {
           </Heading>
           <Text mt={10}>Podemos te ajudar pelo nosso canal de e-mail</Text>
           <Heading as="h2" size="lg" my={4} color="orange.500">
-            contato@tourimsaccessblity.com
+            contato@adaptour.com
           </Heading>
         </Box>
       </Box>

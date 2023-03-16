@@ -148,7 +148,6 @@ function Steps() {
             SÓ MAIS UM POUQINHO...
           </Heading>
           <SimpleGrid columns={1} spacing={4} mt={10}>
-            <Input name="cep" label="CEP" />
             <Select
               placeholder="ESTADO"
               size="lg"
@@ -163,11 +162,6 @@ function Steps() {
               <option value="option2">São Paulo</option>
               <option value="option3">Brasília</option>
             </Select>
-            <Input name="rua" label="Rua" />
-            <Input name="Bairro" label="Bairro" />
-            <Input name="Complemento" label="Complemento" />
-            <Input name="Numero" label="Numero" />
-            <Input name="Cidade" label="Cidade" />
           </SimpleGrid>
 
           <Flex

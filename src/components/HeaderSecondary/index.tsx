@@ -8,16 +8,6 @@ export function HeaderSecondary() {
   return (
     <Box bgColor="white">
       <Flex as="header" w="100%" h="8vh" mx="auto" p="6" align="center">
-        <IconButton
-          colorScheme="gray"
-          variant="outline"
-          aria-label="Back"
-          fontSize="20px"
-          icon={<ArrowBackIcon />}
-          onClick={() => router.back()}
-          rounded="full"
-          mr={3}
-        />
         <Logo />
         <Flex align="center" ml="auto"></Flex>
       </Flex>

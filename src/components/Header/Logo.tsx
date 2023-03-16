@@ -5,8 +5,8 @@ export function Logo() {
     <Flex>
       <Text fontSize="3xl" fontWeight="bold" letterSpacing="tight" w="96">
         Adap
-        <Text as="span" ml="1" color="orange.500">
-          Tour
+        <Text as="span" color="orange.500">
+          tour
         </Text>
       </Text>
     </Flex>

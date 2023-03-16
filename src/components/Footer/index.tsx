@@ -22,10 +22,9 @@ function Footer() {
         <Text as="span" color="orange.500">
           ♥
         </Text>{" "}
-        por Turism{" "}
+        por Adap
         <Text as="span" color="orange.500">
-          {" "}
-          Accessibility
+          tour
         </Text>
       </Text>
     </Flex>

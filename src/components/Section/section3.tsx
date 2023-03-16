@@ -19,10 +19,10 @@ export default function Section3() {
         <SimpleGrid columns={2} spacing={10}>
           <Flex direction="column" justify="center">
             <Heading as="h2" size="2xl">
-              O que é o Tourims <Text> Accessbility?</Text>
+              O que é o Adaptour?
             </Heading>
             <Text fontSize="2xl" fontWeight="medium" mt={10}>
-              É um projeto criado no eventoHackatour Cataratas 2023. Tendo o
+              É um projeto criado no evento Hackatour Cataratas 2023. Tendo o
               foco em auxiliar e fomentar a acessibilidade em Foz do Iguaçu.
               Aonde a pessoas com alguma necessidade terão mais confiança e
               aproveitar melhor seu turismo na cidade

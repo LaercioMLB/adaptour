@@ -3,19 +3,17 @@ import {
   Stack,
   Text,
   Button,
-  Divider,
-  IconButton,
-  VStack,
   Box,
   Heading,
   Flex,
   SimpleGrid,
   Select,
   Checkbox,
-  Input,
 } from "@chakra-ui/react";
-import { CheckIcon } from "@chakra-ui/icons";
-import CountPeople from "@/components/Form/CountPeople";
+import InputCountPeople from "@/components/Form/InputCountPeople";
+import InputText from "@/components/Form/InputText";
+import InputDate from "@/components/Form/InputDate";
+import Stepper from "@/components/Step";
 
 function Steps() {
   const [activeStep, setActiveStep] = useState(0);
@@ -30,106 +28,20 @@ function Steps() {
 
   return (
     <Stack spacing={6}>
-      <Stack direction="row" justifyContent="center" align="center">
-        <Stack direction="column" justifyContent="center" align="center">
-          {activeStep >= 1 ? (
-            <IconButton
-              sx={{ maxWidth: "25px", marginTop: "20px" }}
-              variant="outline"
-              backgroundColor="orange.100"
-              aria-label="Send email"
-              icon={<CheckIcon color="orange.500" />}
-              rounded="full"
-              border="2px"
-              borderColor="orange.500"
-            />
-          ) : (
-            <VStack>
-              <Button
-                sx={{ maxWidth: "25px", marginTop: "20px" }}
-                variant={activeStep === 0 ? "solid" : "outline"}
-                colorScheme="orange"
-                rounded="full"
-              >
-                1
-              </Button>
-            </VStack>
-          )}
-          <Box>Destino</Box>
-        </Stack>
-
-        <Divider borderColor={activeStep >= 1 ? "orange.500" : "gray.300"} />
-        <Stack direction="column" justifyContent="center" align="center">
-          {activeStep >= 2 ? (
-            <IconButton
-              sx={{ maxWidth: "25px", marginTop: "20px" }}
-              variant="outline"
-              backgroundColor="orange.100"
-              aria-label="Send email"
-              icon={<CheckIcon color="orange.500" />}
-              rounded="full"
-              border="2px"
-              borderColor="orange.500"
-            />
-          ) : (
-            <Button
-              sx={{ maxWidth: "25px", marginTop: "20px" }}
-              variant={activeStep === 1 ? "solid" : "outline"}
-              colorScheme="orange"
-              rounded="full"
-            >
-              2
-            </Button>
-          )}
-          <Box>Seleção</Box>
-        </Stack>
-        <Divider borderColor={activeStep >= 2 ? "orange.500" : "gray.300"} />
-        <Stack direction="column" justifyContent="center" align="center">
-          <Button
-            sx={{ maxWidth: "25px", marginTop: "20px" }}
-            variant={activeStep === 2 ? "solid" : "outline"}
-            colorScheme="orange"
-            rounded="full"
-          >
-            3
-          </Button>
-          <Box>Confirmação</Box>
-        </Stack>
-      </Stack>
-
+      <Stepper
+        stepNumber={activeStep}
+        stepOne="Destino"
+        stepTwo="Seleção"
+        stepThree="Confirmação"
+      />
       {activeStep === 0 && (
         <Box textAlign="center">
-          <Box mt={10}>
-            <Box textAlign="left" fontWeight={500}>
-              Destino
-            </Box>
-            <Input variant="flushed" placeholder="Digite seu destino" />
-          </Box>
-          <Box mt={10}>
-            <Box textAlign="left" fontWeight={500}>
-              Ida
-            </Box>
-            <Input
-              variant="flushed"
-              placeholder="Select Date and Time"
-              size="md"
-              type="date"
-            />
-          </Box>
-          <Box mt={10}>
-            <Box textAlign="left" fontWeight={500}>
-              Volta
-            </Box>
-            <Input
-              variant="flushed"
-              placeholder="Select Date and Time"
-              size="md"
-              type="date"
-            />
-          </Box>
-          <Box mt={10}>
-            <CountPeople title="Adulto" subtitle="13 anos ou mais" />
-          </Box>
+          <InputText label="Destino" placeholder="Digite seu destino" />
+          <InputDate label="Ida" placeholder="Selecione a data de ida" />
+          <InputDate label="Volta" placeholder="Selecione a data de volta" />
+          <InputCountPeople title="Adulto" subtitle="13 anos ou mais" />
+          <InputCountPeople title="Crianças" subtitle="Idade 2 - 12" />
+          <InputCountPeople title="Animais de estimação" />
           <Button
             colorScheme="orange"
             size="lg"

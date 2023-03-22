@@ -2,8 +2,8 @@ import { useState } from "react";
 import { HeaderSecondary } from "@/components/HeaderSecondary";
 import { Box, Grid, GridItem } from "@chakra-ui/react";
 import Image from "next/image";
-import register1 from "../public/register1.png";
-import Stepper from "@/components/Step";
+import register1 from "../../public/register1.png";
+import StepsRegister from "./StepsRegister";
 
 export default function Register() {
   const [activeStep, setActiveStep] = useState(3);
@@ -21,12 +21,7 @@ export default function Register() {
       <Grid h="92vh" templateColumns="repeat(2, 1fr)">
         <GridItem h="100%" colSpan={1}>
           <Box p="10">
-            <Stepper
-              stepNumber={activeStep}
-              stepOne="Insira seus dados"
-              stepTwo="Sua localização"
-              stepThree="Sobre você"
-            />
+            <StepsRegister />
           </Box>
         </GridItem>
         <GridItem

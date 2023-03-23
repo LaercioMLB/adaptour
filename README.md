@@ -6,17 +6,11 @@
 
 <img src="image/banner-readme.png" alt="banner-adaptour">
 
-> Adaptour é um projeto feito no Hackatour Cataratas 2023, Foz do iguaçu, Paraná. 
-<br>
-🥈2º Lugar na premiação geral.
-<br>
-> Projeto ajuda a solucionar a dor de um grupo de turistas aonde se precisam de acessbilidade.
-<br>
-Criando um roteiro de viagens aonde será possível a partir de um cadastro na plataforma indicar locais com as acessibilidades
-<br>
-necessarias para o turista, e também promover o turismo acessivel para a cidade, gerando mais interesse de um grupo de turistas
-<br>
-muito importantes.
+> Adaptour é um projeto feito no Hackatour Cataratas 2023, Foz do iguaçu, Paraná. <br> <br>
+🥈2º Lugar na premiação geral. <br> <br>
+Projeto ajuda a solucionar a dor de um grupo de turistas aonde se precisam de acessbilidade. <br>
+<br> Criando um roteiro de viagens aonde será possível a partir de um cadastro na plataforma indicar locais com as acessibilidades
+<br> necessarias para o turista, e também promover o turismo acessivel para a cidade, gerando mais interesse de um grupo de turistas muito importantes.
  ## 🔨 Funcionalidades do projeto
 
 - `Criar roteiros personalizados`: A principal funcionalidade do sistema é criar roteiros indicando e recomendando locais aonde se tem a acessbilidade necessária para o turista.

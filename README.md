@@ -1,38 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Projeto Adaptour
 
-First, run the development server:
+![GitHub repo size](https://img.shields.io/github/repo-size/LaercioMLB/adaptour)
+![GitHub language count](https://img.shields.io/github/languages/count/LaercioMLB/adaptour)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+<img src="image/banner-readme.png" alt="banner-adaptour">
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> Adaptour é um projeto feito no Hackatour Cataratas 2023, Foz do iguaçu, Paraná. <br> <br>
+🥈2º Lugar na premiação geral. <br> <br>
+Projeto ajuda a solucionar a dor de um grupo de turistas aonde se precisam de acessbilidade. <br>
+<br> Criando um roteiro de viagens aonde será possível a partir de um cadastro na plataforma indicar locais com as acessibilidades
+<br> necessarias para o turista, e também promover o turismo acessivel para a cidade, gerando mais interesse de um grupo de turistas muito importantes.
+ ## 🔨 Funcionalidades do projeto
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- `Criar roteiros personalizados`: A principal funcionalidade do sistema é criar roteiros indicando e recomendando locais aonde se tem a acessbilidade necessária para o turista.
+- `Turista`: O turista terá uma autonomia maior e uma melhor experiencia em suas viagens, evitando constrangimentos ou isolamento sociais por conta de alguma condição.
+- `Comércio`: A partir do momento aonde a cidade se adapta e evolua para o acesso desse grupo de turistas, atraíra uma parcela consideravél de turistas que ficam mais tempo na cidade e consequentemente consomem mais, gerando maior fluxo de caixa para os comerciantes locais.
+### Ajustes e melhorias
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Temos um MVP no figma e também sua lading page em: adaptour.labub.com.br 
+<br>
+Essas serão as proximas melhorias a serem feitas
+- [x] Criar lading page
+- [ ] Começar a montar o back-end
+- [ ] Crianção do fluxo MER E DER.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🤝 Colaboradores
 
-## Learn More
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/laercio-bubiak/" taret="blank">
+        <img src="image/card-laercio.png" width="600px;" alt="Foto do Laercio Bubiak no GitHub"/><br>
+        <sub>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/dionbiancha/" target="blank">
+        <img src="image/card-dionei.png" width="600px;" alt="Foto do Dionei no GitHub"/><br>
+        <sub>
+        </sub>
+      </a>
+    </td>
+    </table>
+    <table>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/riad-younes-6a5348187/" target="blank">
+        <img src="image/card-riad.png" width="600px;" alt="Foto do Riad no GitHub"/><br>
+        <sub>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/alan-jbdn/" target="blank">
+        <img src="image/card-alan.png" width="600px;" alt="Foto do Alan no GitHub"/><br>
+        <sub>
+        </sub>
+      </a>
+    </td>
+      </a>
+    </td>
+     <td align="center">
+      <a href="https://www.linkedin.com/in/araujovx/" target="blank">
+        <img src="image/card-araujo.png" width="600px;" alt="Foto do Araujo no GitHub"/><br>
+        <sub>
+        </sub>
+      </a>
+</table>

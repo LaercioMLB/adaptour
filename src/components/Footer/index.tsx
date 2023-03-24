@@ -3,6 +3,7 @@ import { Flex, Text } from "@chakra-ui/react";
 function Footer() {
   return (
     <Flex
+      direction={{ sm: "column", md: "row" }}
       as="footer"
       justify="center"
       align="center"

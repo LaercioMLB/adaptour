@@ -9,14 +9,13 @@ export default function Section2() {
     <Box>
       <Box
         w="100%"
-        h="500"
         mx="auto"
         p="6"
         alignItems="center"
         maxWidth={1480}
         color="gray.900"
       >
-        <SimpleGrid columns={2} spacing={10}>
+        <SimpleGrid columns={2} spacing={10} minChildWidth="300px">
           <Flex direction="column" align="center">
             <Image
               src={section2}

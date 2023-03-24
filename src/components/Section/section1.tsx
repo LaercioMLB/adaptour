@@ -9,14 +9,13 @@ export default function Section1() {
     <Box bgColor="orange.300">
       <Box
         w="100%"
-        h="500"
         mx="auto"
         p="6"
         alignItems="center"
         maxWidth={1480}
         color="gray.50"
       >
-        <SimpleGrid columns={2} spacing={10}>
+        <SimpleGrid minChildWidth="300px" columns={2} spacing={10}>
           <Flex direction="column" justify="center">
             <Heading as="h2" size="2xl">
               Conheça o mundo<Text> sem ter medo!</Text>

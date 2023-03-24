@@ -96,6 +96,7 @@ export default function Header() {
         >
           <Button
             as={"a"}
+            display={{ base: "none", md: "flex" }}
             fontSize={"sm"}
             fontWeight={600}
             color={"white"}

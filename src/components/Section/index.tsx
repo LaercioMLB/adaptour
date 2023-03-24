@@ -1,6 +1,4 @@
-import { Box, Button, Flex, Heading, SimpleGrid, Text } from "@chakra-ui/react";
-import Image from "next/image";
-import section1 from "../../public/section1.png";
+import { Box } from "@chakra-ui/react";
 import Section1 from "./section1";
 import Section2 from "./section2";
 import Section3 from "./section3";

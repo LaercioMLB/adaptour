@@ -8,7 +8,7 @@ interface InputTextProps {
 
 function InputText({ label, placeholder }: InputTextProps) {
   return (
-    <Box mt={10}>
+    <Box mt={8}>
       <Box textAlign="left" fontWeight={500}>
         {label}
       </Box>
